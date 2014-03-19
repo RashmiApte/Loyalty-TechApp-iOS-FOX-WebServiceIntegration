@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 \
+\pard\tx674\pardeftab674\pardirnatural
+
+\f1\b\fs28 \cf0 \CocoaLigature0 1. login envelop:=
+\fs22  <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><login><loginRequest><applicationType>M</applicationType><password>pra@123</password><role>C</role><userName>rd@gmail.com</userName><valid>true</valid></loginRequest></login></soap:Body></soap:Envelope>
+\f0\b0\fs24 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\pard\tx674\pardeftab674\pardirnatural
+
+\f1\b\fs28 \cf0 \CocoaLigature0 2. registerUser envelop:=
+\fs22  \
+\
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><registerUser><registerRequest><DOB>16081987</DOB><cardInfo><CVV>083</CVV><cardName>3D visa card</cardName><cardNumber>4012001037141112</cardNumber><expiryDate>0214</expiryDate><valid>false</valid></cardInfo><city>indore</city><country>826</country><emailAddress>email@gmail.com</emailAddress><firstName>ajit</firstName><lastName>sharma</lastName><middleName>kumar</middleName><mobilePhoneNumber>9009241741</mobilePhoneNumber><password>abc123</password><postCode>155</postCode><region>LIG</region><sex>Male</sex><streetAddress1>16</streetAddress1><streetAddress2>street 2</streetAddress2><userName>ajit@gmail.com</userName><valid>true</valid></registerRequest></registerUser></soap:Body></soap:Envelope>
+\f0\b0\fs24 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+\pard\tx674\pardeftab674\pardirnatural
+
+\f1\b\fs28 \cf0 \CocoaLigature0 3. getCountryList envelop:=
+\fs22  \
+\
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://www.yes-pay.net/cardholder/services/CardHolderService"><soap:Body><getCountryList><countryListRequest><valid>false</valid></countryListRequest></getCountryList></soap:Body></soap:Envelope>\
+\
+
+\f0\b0\fs24 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\pard\tx674\pardeftab674\pardirnatural
+
+\f1\b\fs28 \cf0 \CocoaLigature0 4. getCurrencyCodes envelop:=
+\fs22 \
+\
+ <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://www.yes-pay.net/cardholder/services/CardHolderService"><soap:Body><getCurrencyCodes><currencyCodesRequest><applicationType>M</applicationType><valid>true</valid></currencyCodesRequest></getCurrencyCodes></soap:Body></soap:Envelope>\
+\
+
+\fs28 5. getCardsInWalletDetailed =
+\fs22  \
+\
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><getCardsInWalletDetailed><getCardsInWalletDetailedRequest><SC>D6EBBE9022D2029F15C0A94708ADFB9FDAFCD473</SC><applicationType>M</applicationType><updateDatetimestamp>20022014 11:27:53</updateDatetimestamp><userName>rd@gmail.com</userName><valid>true</valid></getCardsInWalletDetailedRequest></getCardsInWalletDetailed></soap:Body></soap:Envelope>\
+\
+
+\fs28 6. getUserInfo envelop:=
+\fs22  \
+\
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><getUserInfo><userInfoRequest><SC>1137BEC4211FA9A5427229D164B4911B382A58E5</SC><userName>rd@gmail.com</userName><valid>true</valid></userInfoRequest></getUserInfo></soap:Body></soap:Envelope>\
+\
+
+\fs28 7. updateUserInfo envelop:=
+\fs22  <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><updateUserInfo><updateUserInfoRequest><DOB>26121986</DOB><SC>1137BEC4211FA9A5427229D164B4911B382A58E5</SC><applicationType>M</applicationType><emailAddress>jit@gmail.com</emailAddress><firstName>rd</firstName><lastName>rd</lastName><middleName></middleName><postCode>14</postCode><sex></sex><streetAddress1>21</streetAddress1><userName>rd@gmail.com</userName><valid>true</valid></updateUserInfoRequest></updateUserInfo></soap:Body></soap:Envelope>\
+\
+
+\fs28 8. addCard envelop:=
+\fs22  <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><addCard><addCardRequest><CVV>083</CVV><SC>8901A2E7EC84CF58AAB0B0206DF4A4E565116718</SC><addressLine1>STREET1</addressLine1><addressLine2>stree2</addressLine2><applicationType>M</applicationType><cardName>3D VISA CARD</cardName><cardNumber>4012001037141112</cardNumber><cardholderName>ajit sharma</cardholderName><city>indore</city><country>826</country><email1>ajit@gmail.com</email1><expiryDate>0214</expiryDate><fax1>fax2323</fax1><phone1>9009241741</phone1><postCode>155</postCode><userName>rd@gmail.com</userName><valid>true</valid></addCardRequest></addCard></soap:Body></soap:Envelope>\
+\
+
+\fs28 9. updateCard envelop:=
+\fs22  <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><updateCard><updateCardRequest><CVV>006</CVV><SC>8901A2E7EC84CF58AAB0B0206DF4A4E565116718</SC><addressLine1>21</addressLine1><addressLine2></addressLine2><applicationType>M</applicationType><cardName>My first card</cardName><cardReference>500000217</cardReference><cardholderName>John</cardholderName><city></city><country>826</country><email1></email1><expiryDate>0115</expiryDate><fax1></fax1><phone1></phone1><postCode>14</postCode><userName>rd@gmail.com</userName><valid>true</valid></updateCardRequest></updateCard></soap:Body></soap:Envelope>\
+\
+\
+
+\fs28 10. resetPassword envelop:=
+\fs22  \
+\
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><resetPassword><resetPasswordRequest><applicationType>M</applicationType><userName>jain@yes-secure.com</userName><valid>true</valid></resetPasswordRequest></resetPassword></soap:Body></soap:Envelope>\
+\
+\
+
+\fs28 11. updatePassword envelop:=
+\fs22  \
+\
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><updatePassword><updatePasswordRequest><SC>CB9AA00FE8A89F0EA12DD974EE90001BCCCF698C</SC><applicationType>M</applicationType><newPassword>abc123</newPassword><oldPassword>abc1234</oldPassword><userName>rd@gmail.com</userName><valid>true</valid></updatePasswordRequest></updatePassword></soap:Body></soap:Envelope>\
+\
+
+\fs28 12. getContactUsInfo envelop:=
+\fs22  <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><getContactUsInfo><contactUsInfoRequest><SC>D26AC6CD938044EFECDF4A0C6D7C8FC7F4203735</SC><applicationType>M</applicationType><role>C</role><userName>pouchtest@gmail.com</userName><valid>true</valid></contactUsInfoRequest></getContactUsInfo></soap:Body></soap:Envelope>\
+\
+
+\fs28 13. removeCard envelop:=
+\fs22  <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><removeCard><removeCardRequest><SC>D6EBBE9022D2029F15C0A94708ADFB9FDAFCD473</SC><applicationType>M</applicationType><cardReference>500000217</cardReference><userName>rd@gmail.com</userName><valid>true</valid></removeCardRequest></removeCard></soap:Body></soap:Envelope>\
+\
+\
+
+\fs28 14. logout envelop:=
+\fs22  <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="https://194.72.158.228/cardholder/services/CardHolderService"><soap:Body><logout><logoutRequest><SC>D26AC6CD938044EFECDF4A0C6D7C8FC7F4203735</SC><applicationType>M</applicationType><role>C</role><userName>pouchtest@gmail.com</userName><valid>true</valid></logoutRequest></logout></soap:Body></soap:Envelope>\
+\
+\
+\
+\
+}

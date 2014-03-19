@@ -1,0 +1,53 @@
+/*
+ Localizable.strings
+ YesPayCardHolderWallet
+ 
+ Created by Shailesh Tiwari on 07/06/11.
+ Copyright 2011 YESpay. All rights reserved.
+ */
+
+"CreateOneTimeCardTitle" = "Virtual Card";
+"NetWork Available" = "Online";
+"No NetWork Available" = "Offline";
+
+
+
+//Added by Ankit Jain
+
+//https://www.yes-pay.net/cardholder/services/CardHolderService
+
+
+//"DomainURL"="https://www.yes-pay.net/cardholder/services/CardHolderService";
+
+"DomainURL"="http://192.168.95.106:8055/loyalty/services/LoyaltyService";
+"StagingURL"="https://194.72.158.228/cardholder/services/CardHolderService";
+
+//sumit systeam
+//"StagingURL"="http://192.168.95.106:8055/cardholder/services/CardHolderService";
+
+//for FAQ Added by ankit jain 14 dec 2013
+
+"Qusestion1"="1. What details would I require to sign up?";
+"Ans1"="A valid email address, an active Debit or Credit card details and your card billing address as in bank records.";
+"Question2"="2. What is the compulsory information I am expected to provide while sign up?";
+"Ans2"="All the fields marked with asterisk (*) in sign up form are mandatory.";
+
+"Question3"="3. Which address do I enter if I provide Corporate card details?";
+
+"Ans3"="You are expected to enter the card billing address as in bank records.";
+
+"Question4"="4. I live in a flat, how do I enter my address so that my address verifies?";
+
+"Ans4"="In Street Address 1, you must write the flat number followed by the street number followed by the street name, e.g. Flat 1 22 ABC Road. We use a strict security process, which needs both these numbers in the first line in this order to match your address to your postcode.";
+
+"Question5"="5. I am asked to verify the address / post code again and again?";
+"Ans5"="You must enter your card billing address and the post code exactly the way you have provided to the bank.";
+
+//bundleid for debuging com.yespay.YESpayCardHolder
+//bundelid for adho   com.ebot.wpwallet
+
+
+
+
+
+

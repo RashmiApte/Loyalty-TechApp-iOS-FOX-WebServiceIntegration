@@ -1,0 +1,38 @@
+ Rashmi          1-Aug-2013
+ ==========================
+
+1. Changed most of the alert messages text. The remaining can be changed when the condition triggering the message is known.
+2. Change method declaration Database.h, Database.m
+ from //+(void)saveCurrencListInToDataBase:(NSString *)currCode:(NSString *)currAlphaCode:(NSString *)currName{
+ to
+ +(void)saveCurrencListInToDataBase:(NSString *)currCode AlphaCode:(NSString *)currAlphaCode Name:(NSString *)currName
+ {
+ It was giving warning in xcode 4.6
+
+3. Replaced the following method in all the files as it got depricated in iOS3.0
+if(cell == nil){
+      cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+     }    
+    //Rashmi: 02-08-2013: initWithFrame deprecated in 3.0 
+	/*if(cell == nil){
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier] autorelease];
+	}*/
+4. Put file level comments whereever I made changes.
+5. Removed other warnings
+6. Instant Discount Coupon is working with hardcoded lat, long. Remove it when giving the build for demo.
+==============================================================
+
+Ankit Jain  17/oct/2013
+
+MyWallet screen logic
+1) When status code is 0 than all card info come from servere .
+2) When status code is 2 than all card info come from local db.
+3) When status code is 0 and number of card is 1 than no need to delete the local db data save new record in carddetails table . 
+==============================================================
+NSuserdefaults logic
+
+4) NSuserdefaults store security contex.
+5) NSUserdefault with key "isNewSessionUserInfo" is flage to maintain current login session for UserInfo.
+6) NSUserdefault with key "isNewSessionAddress" is flage to maintain current login session for UpdateDeliveryAddress.
+
+
